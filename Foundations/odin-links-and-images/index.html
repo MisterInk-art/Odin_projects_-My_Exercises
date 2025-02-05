@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Links and images</title>
+    </head>
+    <body>
+        <h1>Homepage</h1>
+        <section>
+            <article>
+                <h2>Links</h2>
+                <p>
+                    <code>
+                        &lt;a href="https://www.theodinproject.com/about"
+                        target="_blank" rel="noopener noreferrer" &gt;About The
+                        Odin Project&lt;/a&gt;</code
+                    >
+                </p>
+                <p>
+                    <a
+                        href="https://www.theodinproject.com/about"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        About The Odin Project</a
+                    >
+                </p>
+                <h2>Attributes explained</h2>
+                <dl>
+                    <dt>href="https://www.theodinproject.com/about"</dt>
+                    <dd>
+                        his is the most crucial part. It specifies the URL that
+                        the link points to.
+                    </dd>
+                    <dt>target="_blank"</dt>
+                    <dd>
+                        This attribute tells the browser to open the linked page
+                        in a new tab or window. This is important for user
+                        experience so they don't navigate away from your site.
+                    </dd>
+                    <dt>rel="noopener noreferrer"</dt>
+                    <dd>
+                        Phis is a very important security measure, especially
+                        when using target="_blank". It prevents the new tab from
+                        being able to manipulate the original page through the
+                        window.opener property. This is a critical step to avoid
+                        potential security vulnerabilities. It's almost always
+                        best practice to include this when using
+                        target="_blank".
+                    </dd>
+                </dl>
+                <h2>Absolute and relative links</h2>
+                <h3>Absolute links</h3>
+                <p>
+                    Absolute links are used to link to resources on different
+                    websites. They contain the full URL, including the protocol
+                    (scheme), domain name, and any path to a specific page or
+                    resource. The general format is:
+                    <code>scheme://domain/path</code>. Both the scheme (e.g.,
+                    <code>https://</code>) and the domain (e.g.,
+                    <code>www.example.com</code>) are essential components of an
+                    absolute link.
+                </p>
+                <p>
+                    For example,
+                    <code>https://www.theodinproject.com/about</code> is an
+                    absolute link to the "About" page on The Odin Project
+                    website.
+                </p>
+                <h3>Realtive links</h3>
+                <p>
+                    Relative links are used to link to other pages on the same
+                    website. They specify the path to the target resource
+                    relative to the current page's location. Because they link
+                    within the same domain, the domain name is not included.
+                    Relative links can also be used to link to different
+                    sections of the same page.
+                </p>
+                <p>
+                    For example:
+                    <code
+                        >&lt;a href="contact.html"&gt;Contact us&lt;/a&gt;</code
+                    >
+                    links to the "contact.html" page within the same website.
+                </p>
+            </article>
+            <article>
+                <h2>Images</h2>
+                <h3>External source of image</h2>
+                <p>
+                    <code
+                        >&lt;img
+                        src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project logo"&gt;</code
+                    >
+                </p>
+                <img
+                    src="https://www.theodinproject.com/mstile-310x310.png"
+                    alt="The Odin Project logo"
+                />
+                <h3>Internal source of image</h2>
+                <p>
+                    <code
+                        >&lt;img
+                        src="./images/pexels-ilargian-faus-763704-1629781.jpg"  alt="Funny white dog wears red-blue glasses&gt;</code
+                    >
+                </p>
+                <img
+                    src="./images/pexels-ilargian-faus-763704-1629781.jpg" width="320"
+                    alt="Funny dog wears red-blue glasses"
+                />
+
+
+            </article>
+            
+        </section>
+    </body>
+</html>
